@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.placeholder-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#placeholder {
+    background-image: url("../img/Backgroundnature.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: -1;
+}
+#placeholder ::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: -1;
+    scroll-behavior:smooth;
+}
+
+#placeholder h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position:relative;
+    color: white;
+}
+
+#placeholder .cta {
+    display: inline-block;
+    padding: 10px,30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .5s ease;
+}
+
+ #placeholder .cta:hover { 
+    color: white;
+    background-color: purple;
+} 
+
+/* .textcontainer {
+    background-color: black;
+    opacity: .3;
+    text-align: center;
+
+} */
+
+/* .page2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: blue;
+} */
+
+h1 {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+/* #text {
+    text-align: center;
+} */
+
+nav {
+    position: fixed;
+    text-decoration: aliceblue;
+}
